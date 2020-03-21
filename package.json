@@ -1,0 +1,39 @@
+{
+  "name": "yvis",
+  "version": "0.1.0",
+  "description": "A JupyterLab extension for rendering application/vnd.yvis.v1+json files.",
+  "author": "YVictor <yvictor3141@gmail.com>",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "style": "style/index.css",
+  "keywords": [
+    "jupyter",
+    "jupyterlab",
+    "jupyterlab-extension"
+  ],
+  "files": [
+    "lib/**/*.{d.ts,eot,gif,html,jpg,js,js.map,json,png,svg,woff2,ttf}",
+    "style/**/*.{css,eot,gif,html,jpg,json,png,svg,woff2,ttf}"
+  ],
+  "jupyterlab": {
+    "mimeExtension": true
+  },
+  "scripts": {
+    "clean": "rimraf lib && rimraf tsconfig.tsbuildinfo",
+    "build": "tsc",
+    "prepare": "npm run clean && npm run build",
+    "watch": "tsc -w",
+    "extension:install": "jupyter labextension install yvis",
+    "extension:uninstall": "jupyter labextension uninstall  yvis",
+    "extension:enable": "jupyter labextension enable yvis",
+    "extension:disable": "jupyter labextension disable yvis"
+  },
+  "dependencies": {
+    "@jupyterlab/rendermime-interfaces": "^2.0.0",
+    "@lumino/widgets": "^1.5.0"
+  },
+  "devDependencies": {
+    "rimraf": "^2.6.3",
+    "typescript": "~3.7.0"
+  }
+}
