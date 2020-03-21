@@ -64,7 +64,7 @@ const extension: IRenderMime.IExtension = {
     {
       name: 'application/vnd.yvis.v1+json',
       mimeTypes: [MIME_TYPE],
-      extensions: ['.yvis']
+      extensions: ['.yvis', '.yvis.json']
     }
   ],
   documentWidgetFactoryOptions: {
