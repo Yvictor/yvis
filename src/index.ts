@@ -6,10 +6,14 @@ import { JSONObject } from '@lumino/coreutils';
 
 import { Widget } from '@lumino/widgets';
 
+//import echarts from 'echarts/lib/echarts';
+import * as echarts from 'echarts';
+
+
 /**
  * The default mime type for the extension.
  */
-const MIME_TYPE = 'yvis+v1+json';
+const MIME_TYPE = 'application/vnd.yvis.v1+json';
 
 /**
  * The class name added to the extension.
@@ -27,6 +31,13 @@ export class OutputWidget extends Widget implements IRenderMime.IRenderer {
     super();
     this._mimeType = options.mimeType;
     this.addClass(CLASS_NAME);
+    this._div = document.createElement('div');
+    this._width = '800px';
+    this._height = '600px';
+    this._div.setAttribute('style', `width: ${this._width}; height: ${this._height};`)
+    this.node.appendChild(this._div)
+    this._chart = undefined;
+    this._option = {};
   }
 
   /**
@@ -35,12 +46,91 @@ export class OutputWidget extends Widget implements IRenderMime.IRenderer {
   renderModel(model: IRenderMime.IMimeModel): Promise<void> {
     
     let data = model.data[this._mimeType] as JSONObject;
-    this.node.textContent = JSON.stringify(data);
-    
+    let meta: JSONObject = {};
+    let scope: string = '';
+    let theme: string = '';
+    console.log(data)
+    if (data.hasOwnProperty('meta') === true){
+      meta = data.meta as JSONObject;
+      if (meta.hasOwnProperty('scope') === true){
+        if (meta.hasOwnProperty('height') === true && meta.hasOwnProperty('width') === true){
+          if (meta.width !== this._width || meta.height !== this._height){
+            this._height = meta.height as string
+            this._width = meta.width as string
+            this._div.setAttribute('style', `width: ${this._width}; height: ${this._height};`)
+            if (this._chart !== undefined){
+              this._chart.resize({height: this._height, width: this._width});
+            }
+          }
+        }
+        scope = meta.scope as string;
+        if (scope === 'init' && this._chart === undefined){
+          let initOptions: JSONObject = {};
+          if (meta.hasOwnProperty('init') ===  true){
+            initOptions = meta.init as JSONObject;
+          }
+          initOptions['height'] = this._height;
+          initOptions['width'] = this._width;
+          this._option = data.option as JSONObject;
+          if (meta.hasOwnProperty('theme')){
+            theme = meta.theme as string;
+          }
+          this._chart = echarts.init(this._div, theme, initOptions);
+          this._chart.setOption(this._option);
+
+        } else if (scope === 'update' && this._chart !== undefined){
+          this._option = data.option as JSONObject;
+          this._chart.setOption(this._option);
+        } else if (scope === 'append' && this._chart !== undefined){
+          let option: JSONObject = data.option as JSONObject;
+          if (option.hasOwnProperty("dataset") === true){
+              let dataset: Array<JSONObject> = option.dataset as Array<JSONObject> 
+              dataset.forEach((element, idx) => {
+                if (element.hasOwnProperty('source') === true){
+                  let source: JSONObject = element.source as JSONObject;
+                  Object.keys(source).forEach(colume => {
+                    let _dataset: Array<JSONObject> = this._option.dataset as Array<JSONObject>
+                    let _source: JSONObject = _dataset[idx].source as JSONObject;
+                    let col: Array<any> = source[colume] as Array<any>
+                    if (_source !== null){
+                      let _col: Array<any> = _source[colume] as Array<any>;
+                      if (_col !== null && _col !== undefined){
+                        _col.push(...col);
+                      }
+                    }
+                  })
+                }
+              })
+
+          }
+          this._chart.setOption(this._option);
+        }
+      }
+    } else{
+      console.log('Please provide meta content');
+      this._div.textContent = JSON.stringify(data);
+    }
+
+
     return Promise.resolve();
   }
 
+  protected onResize(msg: Widget.ResizeMessage): void {
+    if (this._chart !== undefined) {
+      if (msg.height !== -1) {
+        this._height = msg.height 
+        this._width = msg.width 
+        this._chart.resize({height: this._height, width: this._width});
+      }
+    }
+  }  
+
   private _mimeType: string;
+  private _div: HTMLDivElement;
+  private _chart: echarts.ECharts | undefined;
+  private _option: JSONObject;
+  private _height: string | number;
+  private _width: string | number;
 }
 
 /**

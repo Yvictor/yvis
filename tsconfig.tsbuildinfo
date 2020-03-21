@@ -321,9 +321,161 @@
         "version": "85497ff49b25c088caa764f9897a4b0a09825204dff99de9e75a0d6987330374",
         "signature": "85497ff49b25c088caa764f9897a4b0a09825204dff99de9e75a0d6987330374"
       },
+      "./node_modules/@types/echarts/options/series/bar.d.ts": {
+        "version": "0303dbd0c8ad9d23acf42c3a1a65e3f1eb51888a6c9484fce3234e36ebe8fa62",
+        "signature": "0303dbd0c8ad9d23acf42c3a1a65e3f1eb51888a6c9484fce3234e36ebe8fa62"
+      },
+      "./node_modules/@types/echarts/options/series/boxplot.d.ts": {
+        "version": "17631005147564cd5c3ca20cae9c554fb6576919675a3be1cc0d7c7e8c457117",
+        "signature": "17631005147564cd5c3ca20cae9c554fb6576919675a3be1cc0d7c7e8c457117"
+      },
+      "./node_modules/@types/echarts/options/series/candlestick.d.ts": {
+        "version": "1b97961f5bb5e4594d3b2a41f77a0bb8b2528a89c810ee72cd529125e9d0a266",
+        "signature": "1b97961f5bb5e4594d3b2a41f77a0bb8b2528a89c810ee72cd529125e9d0a266"
+      },
+      "./node_modules/@types/echarts/options/series/custom.d.ts": {
+        "version": "a9dc49ded9a3a40123eca262cc61ac35009f8f13a025a86b7264357ec1f1cf42",
+        "signature": "a9dc49ded9a3a40123eca262cc61ac35009f8f13a025a86b7264357ec1f1cf42"
+      },
+      "./node_modules/@types/echarts/options/series/effect-scatter.d.ts": {
+        "version": "5a654a93948928cc8f012f7bc00e49c39e0b96e50153ecab783f9e509cfd186b",
+        "signature": "5a654a93948928cc8f012f7bc00e49c39e0b96e50153ecab783f9e509cfd186b"
+      },
+      "./node_modules/@types/echarts/options/series/funnel.d.ts": {
+        "version": "c849c77446ed1724e904ecb96b0e89384b160b8e4eee85974c44e0526ddb6138",
+        "signature": "c849c77446ed1724e904ecb96b0e89384b160b8e4eee85974c44e0526ddb6138"
+      },
+      "./node_modules/@types/echarts/options/series/gauge.d.ts": {
+        "version": "ff34afc9e388670c6a8f7359108bc66955c7e2628d7d799636e6ceb9ba1a49b2",
+        "signature": "ff34afc9e388670c6a8f7359108bc66955c7e2628d7d799636e6ceb9ba1a49b2"
+      },
+      "./node_modules/@types/echarts/options/series/graph.d.ts": {
+        "version": "955a9e9d3f217dec248bc62ce4ed68afc210544dd60d38b4dd5e8361fd2a1e63",
+        "signature": "955a9e9d3f217dec248bc62ce4ed68afc210544dd60d38b4dd5e8361fd2a1e63"
+      },
+      "./node_modules/@types/echarts/options/series/heatmap.d.ts": {
+        "version": "17264d6746b695136c5206f4cb931fa9f9835d42866f9d9d4a67db29f0575425",
+        "signature": "17264d6746b695136c5206f4cb931fa9f9835d42866f9d9d4a67db29f0575425"
+      },
+      "./node_modules/@types/echarts/options/series/line.d.ts": {
+        "version": "3047ba62131226850972d3cd729a9ab7810141bf8b26615d7b96d8d5630541dd",
+        "signature": "3047ba62131226850972d3cd729a9ab7810141bf8b26615d7b96d8d5630541dd"
+      },
+      "./node_modules/@types/echarts/options/series/lines.d.ts": {
+        "version": "67026b4e008c3783164b66c7273a50258ed5a5e691c8e826701fc396297c2528",
+        "signature": "67026b4e008c3783164b66c7273a50258ed5a5e691c8e826701fc396297c2528"
+      },
+      "./node_modules/@types/echarts/options/series/map.d.ts": {
+        "version": "e36e40c85d5a7840c453501943ed5443cf547737c501b8db3daa79bd94fcaa55",
+        "signature": "e36e40c85d5a7840c453501943ed5443cf547737c501b8db3daa79bd94fcaa55"
+      },
+      "./node_modules/@types/echarts/options/series/parallel.d.ts": {
+        "version": "8d77df6a74317cf79a012e5aa277208b7d6cf69ac3d6e4ef0e572def92937242",
+        "signature": "8d77df6a74317cf79a012e5aa277208b7d6cf69ac3d6e4ef0e572def92937242"
+      },
+      "./node_modules/@types/echarts/options/series/pictorial-bar.d.ts": {
+        "version": "ebb7bd30e6d9ab7f42236fb92dc72ee2a4a0b18cb39c7203b188465f7e526908",
+        "signature": "ebb7bd30e6d9ab7f42236fb92dc72ee2a4a0b18cb39c7203b188465f7e526908"
+      },
+      "./node_modules/@types/echarts/options/series/pie.d.ts": {
+        "version": "74b49d4666b7141196ab3aa6e2d1b2d6f6e4eb9853b42eb0c95cfe93ee146c97",
+        "signature": "74b49d4666b7141196ab3aa6e2d1b2d6f6e4eb9853b42eb0c95cfe93ee146c97"
+      },
+      "./node_modules/@types/echarts/options/series/radar.d.ts": {
+        "version": "17891ad51bc5fe3df6d5968745eaa47071f77f9049bb2557dc47fdaaf65e0020",
+        "signature": "17891ad51bc5fe3df6d5968745eaa47071f77f9049bb2557dc47fdaaf65e0020"
+      },
+      "./node_modules/@types/echarts/options/series/sankey.d.ts": {
+        "version": "d74e2bafd87e43373d900c0da0eaa4f202c24f3d53366afddf1f5495097ce65e",
+        "signature": "d74e2bafd87e43373d900c0da0eaa4f202c24f3d53366afddf1f5495097ce65e"
+      },
+      "./node_modules/@types/echarts/options/series/scatter.d.ts": {
+        "version": "68870879bd9d02adefede9a098830b9ef53203475dc7205d2e961d7cfe6b024a",
+        "signature": "68870879bd9d02adefede9a098830b9ef53203475dc7205d2e961d7cfe6b024a"
+      },
+      "./node_modules/@types/echarts/options/series/sunburst.d.ts": {
+        "version": "702601c905cd5a895db4d93ddbfcc949d5d0d1cd9b0c9ca106653108d3e1ca4e",
+        "signature": "702601c905cd5a895db4d93ddbfcc949d5d0d1cd9b0c9ca106653108d3e1ca4e"
+      },
+      "./node_modules/@types/echarts/options/series/theme-river.d.ts": {
+        "version": "a448838cfb714a2c1967684012cc9ad6769f974364bb5ac24418a1e56f52ec4e",
+        "signature": "a448838cfb714a2c1967684012cc9ad6769f974364bb5ac24418a1e56f52ec4e"
+      },
+      "./node_modules/@types/echarts/options/series/tree.d.ts": {
+        "version": "782717ebba33b4488353bbec83ca188a0ef138d59eaa2e2b223e55f7afad9a53",
+        "signature": "782717ebba33b4488353bbec83ca188a0ef138d59eaa2e2b223e55f7afad9a53"
+      },
+      "./node_modules/@types/echarts/options/series/treemap.d.ts": {
+        "version": "5725296002e124664e1e5479ad0d4d65a2e4511fa2c8153b71e6da9fb5a3277e",
+        "signature": "5725296002e124664e1e5479ad0d4d65a2e4511fa2c8153b71e6da9fb5a3277e"
+      },
+      "./node_modules/@types/echarts/options/axis-pointer.d.ts": {
+        "version": "f9bee25eb9460c4928f39c4678146dc8de70fa0aa1bb2ab83be57ad62bb291d9",
+        "signature": "f9bee25eb9460c4928f39c4678146dc8de70fa0aa1bb2ab83be57ad62bb291d9"
+      },
+      "./node_modules/@types/echarts/options/calendar.d.ts": {
+        "version": "2969cb80850159f64d97d4d1521e9896da3ca93d84084cafdfe0669996af7eb7",
+        "signature": "2969cb80850159f64d97d4d1521e9896da3ca93d84084cafdfe0669996af7eb7"
+      },
+      "./node_modules/@types/echarts/options/dataset.d.ts": {
+        "version": "fa90623d3417191f9500ae1dabb77c3100e1e8541c0035e238fa76239d077f0b",
+        "signature": "fa90623d3417191f9500ae1dabb77c3100e1e8541c0035e238fa76239d077f0b"
+      },
+      "./node_modules/@types/echarts/options/data-zoom.d.ts": {
+        "version": "0a74f703577bd293465e11809552185ac26c63ed0ac776534f94cf07fb49cfd5",
+        "signature": "0a74f703577bd293465e11809552185ac26c63ed0ac776534f94cf07fb49cfd5"
+      },
+      "./node_modules/@types/echarts/options/grid.d.ts": {
+        "version": "6879c181fd3c6ff962bec2b62ce63e989b39b2678502a6e511e47e239a19bf9e",
+        "signature": "6879c181fd3c6ff962bec2b62ce63e989b39b2678502a6e511e47e239a19bf9e"
+      },
+      "./node_modules/@types/echarts/options/legend.d.ts": {
+        "version": "d3c62a33678a4bda0318fe8ebe50070a8775b29e10f4c53fd764bc853a1c5237",
+        "signature": "d3c62a33678a4bda0318fe8ebe50070a8775b29e10f4c53fd764bc853a1c5237"
+      },
+      "./node_modules/@types/echarts/options/line-style.d.ts": {
+        "version": "ebad5c1d7dd8878123b4699e379543024b13ce757815ac58c5ea6131125a950d",
+        "signature": "ebad5c1d7dd8878123b4699e379543024b13ce757815ac58c5ea6131125a950d"
+      },
+      "./node_modules/@types/echarts/options/single-axis.d.ts": {
+        "version": "ef78f75e931d26da64d9f4da2aff6aaadbd7f69a3d6034487fbf457e5c34d42c",
+        "signature": "ef78f75e931d26da64d9f4da2aff6aaadbd7f69a3d6034487fbf457e5c34d42c"
+      },
+      "./node_modules/@types/echarts/options/text-style.d.ts": {
+        "version": "084d191e2255721dff9efad0a7a436f00bc2695593de40470ed8d00b4ac2efa3",
+        "signature": "084d191e2255721dff9efad0a7a436f00bc2695593de40470ed8d00b4ac2efa3"
+      },
+      "./node_modules/@types/echarts/options/tooltip.d.ts": {
+        "version": "a3a3b1b0b462bfabe3457b91c3311335fdb41ef9caae1b6c715459a9c1437f67",
+        "signature": "a3a3b1b0b462bfabe3457b91c3311335fdb41ef9caae1b6c715459a9c1437f67"
+      },
+      "./node_modules/@types/echarts/options/visual-map.d.ts": {
+        "version": "7b79c7639c1305dbe65c194fb70a9e083a86cadbb10846b75b01c88584a934ae",
+        "signature": "7b79c7639c1305dbe65c194fb70a9e083a86cadbb10846b75b01c88584a934ae"
+      },
+      "./node_modules/@types/echarts/options/x-axis.d.ts": {
+        "version": "92363a1dbde996dbe69917deca86a2cf07f694975359ed9ad8b03625b4fa1f7a",
+        "signature": "92363a1dbde996dbe69917deca86a2cf07f694975359ed9ad8b03625b4fa1f7a"
+      },
+      "./node_modules/@types/echarts/options/y-axis.d.ts": {
+        "version": "31eb9b53b545b5b01e304523a5341dc4a74a7df3ade82c08e30d9036a0ce5eb7",
+        "signature": "31eb9b53b545b5b01e304523a5341dc4a74a7df3ade82c08e30d9036a0ce5eb7"
+      },
+      "./node_modules/@types/echarts/options/index.d.ts": {
+        "version": "47aca423dd30331eaec148cf1a8c634eaab72a5fddfaf10ce9272f1933c896ba",
+        "signature": "47aca423dd30331eaec148cf1a8c634eaab72a5fddfaf10ce9272f1933c896ba"
+      },
+      "./node_modules/@types/zrender/index.d.ts": {
+        "version": "f0f39ddfa5b32f3c1b5e8b6a49b5a229dbd160dc8a90e2b1b81505f9714c77e9",
+        "signature": "f0f39ddfa5b32f3c1b5e8b6a49b5a229dbd160dc8a90e2b1b81505f9714c77e9"
+      },
+      "./node_modules/@types/echarts/index.d.ts": {
+        "version": "bfd8d0e952cc7fed8e518e41492f750045f5659c95b19e6076062ab6c7cd3978",
+        "signature": "bfd8d0e952cc7fed8e518e41492f750045f5659c95b19e6076062ab6c7cd3978"
+      },
       "./src/index.ts": {
-        "version": "69c7fcad19139945ad942647f8d89d4c458bd48ccc696ae3578bbe43ab5db4e5",
-        "signature": "2215fd84449caaadd0f858e7c8a94895ba8df5c5fd6918c2d295c9161659aef6"
+        "version": "a12003271779694742bbd899eb2848eac41579d4cb1e73566a128d6a9fabd282",
+        "signature": "1b760600912257d84c955df2c247110e6c07da7145208d895ccbdbc9081c1749"
       }
     },
     "options": {
@@ -594,10 +746,52 @@
         "./node_modules/@lumino/coreutils/lib/index.d.ts",
         "./node_modules/@lumino/widgets/lib/index.d.ts"
       ],
+      "./node_modules/@types/echarts/options/index.d.ts": [
+        "./node_modules/@types/echarts/options/series/bar.d.ts",
+        "./node_modules/@types/echarts/options/series/boxplot.d.ts",
+        "./node_modules/@types/echarts/options/series/candlestick.d.ts",
+        "./node_modules/@types/echarts/options/series/custom.d.ts",
+        "./node_modules/@types/echarts/options/series/effect-scatter.d.ts",
+        "./node_modules/@types/echarts/options/series/funnel.d.ts",
+        "./node_modules/@types/echarts/options/series/gauge.d.ts",
+        "./node_modules/@types/echarts/options/series/graph.d.ts",
+        "./node_modules/@types/echarts/options/series/heatmap.d.ts",
+        "./node_modules/@types/echarts/options/series/line.d.ts",
+        "./node_modules/@types/echarts/options/series/lines.d.ts",
+        "./node_modules/@types/echarts/options/series/map.d.ts",
+        "./node_modules/@types/echarts/options/series/parallel.d.ts",
+        "./node_modules/@types/echarts/options/series/pictorial-bar.d.ts",
+        "./node_modules/@types/echarts/options/series/pie.d.ts",
+        "./node_modules/@types/echarts/options/series/radar.d.ts",
+        "./node_modules/@types/echarts/options/series/sankey.d.ts",
+        "./node_modules/@types/echarts/options/series/scatter.d.ts",
+        "./node_modules/@types/echarts/options/series/sunburst.d.ts",
+        "./node_modules/@types/echarts/options/series/theme-river.d.ts",
+        "./node_modules/@types/echarts/options/series/tree.d.ts",
+        "./node_modules/@types/echarts/options/series/treemap.d.ts",
+        "./node_modules/@types/echarts/options/axis-pointer.d.ts",
+        "./node_modules/@types/echarts/options/calendar.d.ts",
+        "./node_modules/@types/echarts/options/dataset.d.ts",
+        "./node_modules/@types/echarts/options/data-zoom.d.ts",
+        "./node_modules/@types/echarts/options/grid.d.ts",
+        "./node_modules/@types/echarts/options/legend.d.ts",
+        "./node_modules/@types/echarts/options/line-style.d.ts",
+        "./node_modules/@types/echarts/options/single-axis.d.ts",
+        "./node_modules/@types/echarts/options/text-style.d.ts",
+        "./node_modules/@types/echarts/options/tooltip.d.ts",
+        "./node_modules/@types/echarts/options/visual-map.d.ts",
+        "./node_modules/@types/echarts/options/x-axis.d.ts",
+        "./node_modules/@types/echarts/options/y-axis.d.ts"
+      ],
+      "./node_modules/@types/echarts/index.d.ts": [
+        "./node_modules/@types/echarts/options/index.d.ts",
+        "./node_modules/@types/zrender/index.d.ts"
+      ],
       "./src/index.ts": [
         "./node_modules/@jupyterlab/rendermime-interfaces/lib/index.d.ts",
         "./node_modules/@lumino/coreutils/lib/index.d.ts",
-        "./node_modules/@lumino/widgets/lib/index.d.ts"
+        "./node_modules/@lumino/widgets/lib/index.d.ts",
+        "./node_modules/@types/echarts/index.d.ts"
       ]
     },
     "exportedModulesMap": {
@@ -845,6 +1039,47 @@
         "./node_modules/@lumino/coreutils/lib/index.d.ts",
         "./node_modules/@lumino/widgets/lib/index.d.ts"
       ],
+      "./node_modules/@types/echarts/options/index.d.ts": [
+        "./node_modules/@types/echarts/options/series/bar.d.ts",
+        "./node_modules/@types/echarts/options/series/boxplot.d.ts",
+        "./node_modules/@types/echarts/options/series/candlestick.d.ts",
+        "./node_modules/@types/echarts/options/series/custom.d.ts",
+        "./node_modules/@types/echarts/options/series/effect-scatter.d.ts",
+        "./node_modules/@types/echarts/options/series/funnel.d.ts",
+        "./node_modules/@types/echarts/options/series/gauge.d.ts",
+        "./node_modules/@types/echarts/options/series/graph.d.ts",
+        "./node_modules/@types/echarts/options/series/heatmap.d.ts",
+        "./node_modules/@types/echarts/options/series/line.d.ts",
+        "./node_modules/@types/echarts/options/series/lines.d.ts",
+        "./node_modules/@types/echarts/options/series/map.d.ts",
+        "./node_modules/@types/echarts/options/series/parallel.d.ts",
+        "./node_modules/@types/echarts/options/series/pictorial-bar.d.ts",
+        "./node_modules/@types/echarts/options/series/pie.d.ts",
+        "./node_modules/@types/echarts/options/series/radar.d.ts",
+        "./node_modules/@types/echarts/options/series/sankey.d.ts",
+        "./node_modules/@types/echarts/options/series/scatter.d.ts",
+        "./node_modules/@types/echarts/options/series/sunburst.d.ts",
+        "./node_modules/@types/echarts/options/series/theme-river.d.ts",
+        "./node_modules/@types/echarts/options/series/tree.d.ts",
+        "./node_modules/@types/echarts/options/series/treemap.d.ts",
+        "./node_modules/@types/echarts/options/axis-pointer.d.ts",
+        "./node_modules/@types/echarts/options/calendar.d.ts",
+        "./node_modules/@types/echarts/options/dataset.d.ts",
+        "./node_modules/@types/echarts/options/data-zoom.d.ts",
+        "./node_modules/@types/echarts/options/grid.d.ts",
+        "./node_modules/@types/echarts/options/legend.d.ts",
+        "./node_modules/@types/echarts/options/line-style.d.ts",
+        "./node_modules/@types/echarts/options/single-axis.d.ts",
+        "./node_modules/@types/echarts/options/text-style.d.ts",
+        "./node_modules/@types/echarts/options/tooltip.d.ts",
+        "./node_modules/@types/echarts/options/visual-map.d.ts",
+        "./node_modules/@types/echarts/options/x-axis.d.ts",
+        "./node_modules/@types/echarts/options/y-axis.d.ts"
+      ],
+      "./node_modules/@types/echarts/index.d.ts": [
+        "./node_modules/@types/echarts/options/index.d.ts",
+        "./node_modules/@types/zrender/index.d.ts"
+      ],
       "./src/index.ts": [
         "./node_modules/@jupyterlab/rendermime-interfaces/lib/index.d.ts",
         "./node_modules/@lumino/widgets/lib/index.d.ts"
@@ -931,6 +1166,44 @@
       "./node_modules/@lumino/widgets/lib/tabpanel.d.ts",
       "./node_modules/@lumino/widgets/lib/index.d.ts",
       "./node_modules/@jupyterlab/rendermime-interfaces/lib/index.d.ts",
+      "./node_modules/@types/echarts/options/series/bar.d.ts",
+      "./node_modules/@types/echarts/options/series/boxplot.d.ts",
+      "./node_modules/@types/echarts/options/series/candlestick.d.ts",
+      "./node_modules/@types/echarts/options/series/custom.d.ts",
+      "./node_modules/@types/echarts/options/series/effect-scatter.d.ts",
+      "./node_modules/@types/echarts/options/series/funnel.d.ts",
+      "./node_modules/@types/echarts/options/series/gauge.d.ts",
+      "./node_modules/@types/echarts/options/series/graph.d.ts",
+      "./node_modules/@types/echarts/options/series/heatmap.d.ts",
+      "./node_modules/@types/echarts/options/series/line.d.ts",
+      "./node_modules/@types/echarts/options/series/lines.d.ts",
+      "./node_modules/@types/echarts/options/series/map.d.ts",
+      "./node_modules/@types/echarts/options/series/parallel.d.ts",
+      "./node_modules/@types/echarts/options/series/pictorial-bar.d.ts",
+      "./node_modules/@types/echarts/options/series/pie.d.ts",
+      "./node_modules/@types/echarts/options/series/radar.d.ts",
+      "./node_modules/@types/echarts/options/series/sankey.d.ts",
+      "./node_modules/@types/echarts/options/series/scatter.d.ts",
+      "./node_modules/@types/echarts/options/series/sunburst.d.ts",
+      "./node_modules/@types/echarts/options/series/theme-river.d.ts",
+      "./node_modules/@types/echarts/options/series/tree.d.ts",
+      "./node_modules/@types/echarts/options/series/treemap.d.ts",
+      "./node_modules/@types/echarts/options/axis-pointer.d.ts",
+      "./node_modules/@types/echarts/options/calendar.d.ts",
+      "./node_modules/@types/echarts/options/dataset.d.ts",
+      "./node_modules/@types/echarts/options/data-zoom.d.ts",
+      "./node_modules/@types/echarts/options/grid.d.ts",
+      "./node_modules/@types/echarts/options/legend.d.ts",
+      "./node_modules/@types/echarts/options/line-style.d.ts",
+      "./node_modules/@types/echarts/options/single-axis.d.ts",
+      "./node_modules/@types/echarts/options/text-style.d.ts",
+      "./node_modules/@types/echarts/options/tooltip.d.ts",
+      "./node_modules/@types/echarts/options/visual-map.d.ts",
+      "./node_modules/@types/echarts/options/x-axis.d.ts",
+      "./node_modules/@types/echarts/options/y-axis.d.ts",
+      "./node_modules/@types/echarts/options/index.d.ts",
+      "./node_modules/@types/zrender/index.d.ts",
+      "./node_modules/@types/echarts/index.d.ts",
       "./src/index.ts"
     ]
   },
