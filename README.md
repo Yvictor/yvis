@@ -9,6 +9,7 @@ A JupyterLab extension for rendering application/vnd.yvis.v1+json files.
 ## Installation
 
 ```bash
+pip install yvis
 jupyter labextension install yvis
 ```
 
@@ -16,7 +17,9 @@ jupyter labextension install yvis
 
 For a development install (requires npm version 4 or later), do the following in the repository directory:
 
+
 ```bash
+poetry install
 # Install dependencies
 jlpm
 # Build Typescript source
