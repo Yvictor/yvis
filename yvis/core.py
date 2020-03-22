@@ -12,9 +12,11 @@ class Base(BaseModel):
         to_dict: bool,
         by_alias: bool,
         include: typing.Optional[
-            typing.Union["AbstractSetIntStr", "DictIntStrAny"]],
+            typing.Union["AbstractSetIntStr", "DictIntStrAny"]
+        ],
         exclude: typing.Optional[
-            typing.Union["AbstractSetIntStr", "DictIntStrAny"]],
+            typing.Union["AbstractSetIntStr", "DictIntStrAny"]
+        ],
         exclude_unset: bool,
         exclude_defaults: bool,
         # exclude_none: bool,
@@ -34,15 +36,15 @@ class Base(BaseModel):
 
 
 class Scope(str, Enum):
-    init = 'init'
-    update = 'update'
-    append = 'append'
+    init = "init"
+    update = "update"
+    append = "append"
 
 
 class MetaContent(Base):
     scope: Scope = Scope.init
-    height: typing.Union[str, int] = '600px'
-    width: typing.Union[str, int] = '800px'
+    height: typing.Union[str, int] = "600px"
+    width: typing.Union[str, int] = "800px"
 
 
 class BaseContent(Base):
@@ -90,5 +92,8 @@ class DisplayCore:
         # self.update_data(content.option.dict(), self.content.option)
         for idx, dataset in enumerate(content.option.dataset):
             for col, value in dataset.source.items():
-                self.content.option['dataset'][idx]['source'][col].extend(value)
+                self.content.option["dataset"][idx]["source"][col].extend(value)
+        self.display_update(content)
+
+    def display_update(self, content: UpdateContent):
         self.display_handle.update({self._app: content.dict()}, raw=True)
