@@ -10,6 +10,8 @@ from .base import (
     EaxisType,
     UpdateChartContent,
     UpdateOption,
+    Etooltip,
+    EtooltipTrigger,
 )
 
 
@@ -36,6 +38,7 @@ class PVChart(BaseChart):
                         yAxisIndex=1,
                     ),
                 ],
+                tooltip=Etooltip(trigger=EtooltipTrigger.axis),
             )
         )
         super().__init__(content)

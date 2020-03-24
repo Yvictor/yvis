@@ -35,6 +35,44 @@ class Base(BaseModel):
         )
 
 
+    def _iter(
+        self,
+        to_dict: bool = False,
+        by_alias: bool = False,
+        allowed_keys: typing.Optional['SetStr'] = None,
+        include: typing.Union['AbstractSetIntStr', 'DictIntStrAny'] = None,
+        exclude: typing.Union['AbstractSetIntStr', 'DictIntStrAny'] = None,
+        exclude_unset: bool = False,
+        exclude_defaults: bool = False,
+        exclude_none: bool = True,
+    ) -> 'TupleGenerator':
+
+        value_exclude = ValueItems(self, exclude) if exclude else None
+        value_include = ValueItems(self, include) if include else None
+
+        if exclude_defaults:
+            if allowed_keys is None:
+                allowed_keys = set(self.__fields__)
+            for k, v in self.__field_defaults__.items():
+                if self.__dict__[k] == v:
+                    allowed_keys.discard(k)
+
+        for k, v in self.__dict__.items():
+            if allowed_keys is None or k in allowed_keys:
+                value = self._get_value(
+                    v,
+                    to_dict=to_dict,
+                    by_alias=by_alias,
+                    include=value_include and value_include.for_element(k),
+                    exclude=value_exclude and value_exclude.for_element(k),
+                    exclude_unset=exclude_unset,
+                    exclude_defaults=exclude_defaults,
+                    # exclude_none=exclude_none,
+                )
+                if not (exclude_none and value is None):
+                    yield k, value
+
+
 class Scope(str, Enum):
     init = "init"
     update = "update"

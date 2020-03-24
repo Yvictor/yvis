@@ -18,6 +18,31 @@ class ExAxis(Base):
 class EyAxis(Base):
     type: EaxisType = EaxisType.value
     scale: bool = True
+    max: float = None
+    min: float = None
+
+
+class EtooltipTrigger(str, Enum):
+    item = "item"
+    axis = "axis"
+    none = "none"
+
+
+class EaxisPointType(str, Enum):
+    line = "line"
+    shadow = "shadow"
+    none = "none"
+    cross = "cross"
+
+
+class EaxisPoint(Base):
+    type: EaxisPointType = EaxisPointType.cross
+
+
+class Etooltip(Base):
+    trigger: EtooltipTrigger = EtooltipTrigger.axis
+    axisPointer: EaxisPoint = EaxisPoint()
+    position: typing.Union[typing.List[str], typing.List[int]] = ["90%", "10%"]
 
 
 class SeriesType(str, Enum):
@@ -56,6 +81,7 @@ class Eoption(Base):
     xAxis: typing.Union[ExAxis, typing.List[ExAxis]] = ExAxis()
     yAxis: typing.Union[EyAxis, typing.List[EyAxis]] = EyAxis()
     series: typing.List[Eseries]
+    tooltip: Etooltip = Etooltip()
 
 
 class UpdateOption(Base):
